@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            checkin_activity
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="res/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="res/lib/jquerymobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet"
+        />
+        <!-- css -->
+        <link type="text/css" href="files/views/assets/css/d3chart.css" rel="stylesheet"
+        />
+        <script type="text/javascript" src="res/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="res/lib/jquery/jquery-1.8.2.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.indexOf("Android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+            });
+        </script>
+        <script type="text/javascript" src="res/lib/jquerymobile/1.3.0/jquery.mobile-1.3.0.js">
+        </script>
+        <script type="text/javascript" src="res/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="res/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true">
+        </script>
+        <script type="text/javascript" src="res/lib/jquery-ui-map/jquery.ui.map.full.min.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="res/lib/cordova.js">
+        </script>
+        <script type="text/javascript" src="res/lib/childbrowser.js">
+        </script>
+        <script type="text/javascript" src="http://d3js.org/d3.v3.min.js">
+        </script>
+        <link href="res/css/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="files/views/assets/js/app.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/D3Graph.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Foursquare_JSUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="checkin_activity" id="j_14"
+        class="type-interior" data-theme="a" data-add-back-btn="false" data-back-btn-text="Back">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-theme="b" name="mobileheader"
+            id="j_16" class=' mobileheader3 '>
+                <h1 dsid="mobileheader">
+                    What Activity?
+                </h1>
+                <!-- mobilebutton_30 -->
+                <a data-role="button" name="mobilebutton_30" dsid="mobilebutton_30" class='ui-btn-left   mobilebutton3'
+                id='j_17' data-corners="true" data-icon="arrow-l" data-iconpos="left" data-inline='true'
+                data-mini='true' data-theme="b" tabIndex="1">
+                Back
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="j_18" name="mobilecontainer" class=" mobilecontainer3"
+            dsid="mobilecontainer" data-theme="d">
+                <link href="checkin_activity.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="checkin_activity.js">
+                </script>
+                <!-- mobilegrid_15 -->
+                <div class="mobilegrid1_wrapper">
+                    <table id="j_19" class=" mobilegrid1" dsid="mobilegrid_15" name="mobilegrid_15"
+                    cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="mobilegrid1_row_0">
+                            <!-- mobilegridcell_16 -->
+                            <td id="j_20" name="mobilegridcell_16" class="mobilegridcell1" colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_22 -->
+                                    <img class=" mobileimage1" src="files/views/assets/image/water2.png" id="j_21" dsid="mobileimage_22"
+                                    name="mobileimage_22" />
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_17 -->
+                            <td id="j_22" name="mobilegridcell_17" class="mobilegridcell2" colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_23 -->
+                                    <img class=" mobileimage2" src="files/views/assets/image/people.png" id="j_23" dsid="mobileimage_23"
+                                    name="mobileimage_23" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="mobilegrid1_row_1">
+                            <!-- mobilegridcell_18 -->
+                            <td id="j_24" name="mobilegridcell_18" class="mobilegridcell3" colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_24 -->
+                                    <img class=" mobileimage3" src="files/views/assets/image/laundrymat.png" id="j_25"
+                                    dsid="mobileimage_24" name="mobileimage_24" />
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_19 -->
+                            <td id="j_26" name="mobilegridcell_19" class="mobilegridcell4" colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_26 -->
+                                    <img class=" mobileimage4" src="files/views/assets/image/ducky.png" id="j_27" dsid="mobileimage_26"
+                                    name="mobileimage_26" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="mobilegrid1_row_2">
+                            <!-- mobilegridcell_20 -->
+                            <td id="j_28" name="mobilegridcell_20" class="mobilegridcell5" colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_25 -->
+                                    <img class=" mobileimage5" src="files/views/assets/image/showertime.png" id="j_29"
+                                    dsid="mobileimage_25" name="mobileimage_25" />
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_21 -->
+                            <td id="j_30" name="mobilegridcell_21" class="mobilegridcell6" colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_27 -->
+                                    <img class=" mobileimage6" src="files/views/assets/image/a_687413631_3b6c4146fa_o.jpg"
+                                    id="j_31" dsid="mobileimage_27" name="mobileimage_27" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class=" mobilefooter3" name="mobilefooter1"
+            dsid="mobilefooter1" id="j_32" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>
