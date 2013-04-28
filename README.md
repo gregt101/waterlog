@@ -1,0 +1,1 @@
+Waterlog is a green water management app for TechCrunch Disrupt NYC 2013. Waterlog is powered by AT&T, Appery.io and Foursquare. We've included a version for Android and Windows Phone.
