@@ -1,0 +1,28 @@
+line {
+  fill: none;
+  stroke: #039;
+  stroke-width: 1px;
+}
+
+
+path {
+  fill: rgba(0,120,180,.5);
+  stroke: #039;
+  stroke-width: 2px;
+}
+
+path.average {
+fill: none;
+stroke: rgba(255, 71, 0, 0.62);
+stroke-width: 2.5px;
+stroke-dasharray: 9,5;
+}
+
+.d3piechart {
+    background:white;   
+}
+
+svg {
+    border: #000 1px solid;
+	background: #FFF;  
+}

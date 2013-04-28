@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            profile
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="res/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="res/lib/jquerymobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet"
+        />
+        <!-- css -->
+        <link type="text/css" href="files/views/assets/css/d3chart.css" rel="stylesheet"
+        />
+        <script type="text/javascript" src="res/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="res/lib/jquery/jquery-1.8.2.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.indexOf("Android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+            });
+        </script>
+        <script type="text/javascript" src="res/lib/jquerymobile/1.3.0/jquery.mobile-1.3.0.js">
+        </script>
+        <script type="text/javascript" src="res/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="res/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true">
+        </script>
+        <script type="text/javascript" src="res/lib/jquery-ui-map/jquery.ui.map.full.min.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="res/lib/cordova.js">
+        </script>
+        <script type="text/javascript" src="res/lib/childbrowser.js">
+        </script>
+        <script type="text/javascript" src="http://d3js.org/d3.v3.min.js">
+        </script>
+        <link href="res/css/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="files/views/assets/js/app.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/D3Graph.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Foursquare_JSUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="profile" id="j_105" class="type-interior"
+        data-theme="a" data-add-back-btn="false" data-back-btn-text="Back">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-theme="b" name="mobileheader"
+            id="j_107" class=' mobileheader9 '>
+                <h1 dsid="mobileheader">
+                    Profile
+                </h1>
+                <!-- mobilenavbar_11 -->
+                <div data-role="navbar" id="j_108" name="mobilenavbar_11" dsid="mobilenavbar_11"
+                class=" mobilenavbar2" data-theme="b" style="position: relative;">
+                    <ul>
+                        <!-- mobilenavbaritem_12 -->
+                        <li>
+                            <a data-theme="b" data-icon="grid" id="j_109" dsid="mobilenavbaritem_12" name="mobilenavbaritem_12">
+                            Activity
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_13 -->
+                        <li>
+                            <a data-theme="b" data-icon="star" id="j_110" dsid="mobilenavbaritem_13" name="mobilenavbaritem_13">
+                            Leaderboard
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_14 -->
+                        <li>
+                            <a data-theme="b" data-icon="info" id="j_111" dsid="mobilenavbaritem_14" name="mobilenavbaritem_14">
+                            Profile
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="j_112" name="mobilecontainer" class=" mobilecontainer9"
+            dsid="mobilecontainer" data-theme="d">
+                <link href="profile.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="profile.js">
+                </script>
+                <!-- mobilegrid_24 -->
+                <div class="mobilegrid2_wrapper">
+                    <table id="j_115" class=" mobilegrid2" dsid="mobilegrid_24" name="mobilegrid_24"
+                    cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="mobilegrid2_row_0">
+                            <!-- mobilegridcell_25 -->
+                            <td id="j_116" name="mobilegridcell_25" class="mobilegridcell7" colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_17 -->
+                                    <img class=" mobileimage7" src="files/views/assets/image/default_bg_64.png" id="j_117"
+                                    dsid="mobileimage_17" name="mobileimage_17" />
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_26 -->
+                            <td id="j_118" name="mobilegridcell_26" class="mobilegridcell8" colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_31 -->
+                                    <div name="mobilelabel_31" id="j_119" dsid="mobilelabel_31" data-role="appery_label"
+                                    class=' mobilelabel1 '>
+                                        Mantena Apartments
+                                    </div>
+                                    <!-- mobilelabel_32 -->
+                                    <div name="mobilelabel_32" id="j_120" dsid="mobilelabel_32" data-role="appery_label"
+                                    class=' mobilelabel2 '>
+                                        431 W 37th Street, New York, NYC
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- panel_15 -->
+                <div name="panel_15" dsid="panel_15" id="j_113" class=" mobilepanel1">
+                    <div class="d3chart">
+                    </div>
+                </div>
+                <!-- mobilebutton_16 -->
+                <a data-role="button" name="mobilebutton_16" dsid="mobilebutton_16" class='  mobilebutton8'
+                id='j_114' data-corners="true" data-mini="false" data-theme="b" tabIndex="1">
+                Calculate Energy Savings
+                </a>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class=" mobilefooter9" name="mobilefooter1"
+            dsid="mobilefooter1" id="j_121" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>
